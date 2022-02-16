@@ -13,6 +13,8 @@ let ``convert input to string`` (expected: string, input: int) =
 [<Theory>]
 [<InlineData("Fizz", 3)>]
 [<InlineData("Fizz", 6)>]
+[<InlineData("Fizz", 9)>]
+[<InlineData("Fizz", 27)>]
 let ``convert input to fizz`` (expected: string, input: int) =
     let result = FizzBuzz.convert input
     Assert.Equal(expected, result)
@@ -21,6 +23,7 @@ let ``convert input to fizz`` (expected: string, input: int) =
 [<Theory>]
 [<InlineData("Buzz", 5)>]
 [<InlineData("Buzz", 10)>]
+[<InlineData("Buzz", 20)>]
 let ``convert input to buzz`` (expected: string, input: int) =
     let result = FizzBuzz.convert input
     Assert.Equal(expected, result)
