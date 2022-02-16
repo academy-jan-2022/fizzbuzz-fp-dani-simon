@@ -2,7 +2,7 @@
 
 let convert input =
     match input with 
-    | 3 -> "Fizz"
-    | 5 -> "Buzz"
     | 15 -> "FizzBuzz"
+    | 5 -> "Buzz"
+    | input when input % 3 = 0 -> "Fizz"
     | _ -> $"{input}"
