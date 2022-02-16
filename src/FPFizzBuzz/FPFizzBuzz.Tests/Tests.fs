@@ -12,6 +12,7 @@ let ``convert input to string`` (expected: string, input: int) =
     
 [<Theory>]
 [<InlineData("Fizz", 3)>]
+[<InlineData("Fizz", 6)>]
 let ``convert input to fizz`` (expected: string, input: int) =
     let result = FizzBuzz.convert input
     Assert.Equal(expected, result)
